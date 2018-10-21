@@ -6,14 +6,14 @@ Angular 2+ Exercise
 
 ## Setup the Server
 
-1. Generate a project using: `ng new ng-rolodex --style=scss`
-1. Change into dir: `cd ng-rolodex`
-1. Install project deps: `npm i`
-1. Add the `express` and `body-parser` dependency
-1. Add the `knex`, `bookshelf`, `pg`, and `pg-hstore` dependencies
-1. Create a postgres user named `admin` with a password
-1. Create a postgres database named `ng_rolodex` owned by `admin`
-1. Update `knexfile.js`
+<!-- 1. Generate a project using: `ng new ng-rolodex --style=scss` -->
+<!-- 1. Change into dir: `cd ng-rolodex` -->
+<!-- 1. Install project deps: `npm i` -->
+<!-- 1. Add the `express` and `body-parser` dependency -->
+<!-- 1. Add the `knex`, `bookshelf`, `pg`, and `pg-hstore` dependencies -->
+<!-- 1. Create a postgres user named `admin` with a password -->
+<!-- 1. Create a postgres database named `ng_rolodex` owned by `admin` -->
+<!-- 1. Update `knexfile.js` -->
 1. Create a 2 models, `Users` and `Contacts` _refer to **[schemas](#schemas)**_
 1. Create the appropriate Bookshelf model files.
 1. Setup an express project in `server.js`
