@@ -1,0 +1,8 @@
+<form>
+  <label>Search: <input type='text' (keyup)='onKeyUp($event)'></label>
+  <br>
+  <div id='liveSearch'> {{value}} </div>
+  <div *ngFor='let test of testNames'>
+      {{ test.name }}
+    </div>
+</form>

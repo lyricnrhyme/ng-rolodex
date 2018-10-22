@@ -14,11 +14,11 @@ Angular 2+ Exercise
 <!-- 1. Create a postgres user named `admin` with a password -->
 <!-- 1. Create a postgres database named `ng_rolodex` owned by `admin` -->
 <!-- 1. Update `knexfile.js` -->
-1. Create a 2 models, `Users` and `Contacts` _refer to **[schemas](#schemas)**_
-1. Create the appropriate Bookshelf model files.
-1. Setup an express project in `server.js`
-1. Set up express static middleware configured to serve content from `./public`
-1. Set up express static middleware for `body-parser`
+<!-- 1. Create a 2 models, `Users` and `Contacts` _refer to **[schemas](#schemas)**_ -->
+<!-- 1. Create the appropriate Bookshelf model files. -->
+<!-- 1. Setup an express project in `server.js` -->
+<!-- 1. Set up express static middleware configured to serve content from `./public` -->
+<!-- 1. Set up express static middleware for `body-parser` -->
 1. Add router middleware for `/api` to use the `/api/index.js` module
 1. `/api/index.js` will require and use the two modules, `./contacts`, `./users`
 1. Implement the routes defined in **[routes](#routes)**
