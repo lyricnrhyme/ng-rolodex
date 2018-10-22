@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BackendService } from 'src/app/services/backend.service';
 
 @Component({
   selector: 'app-all-contacts',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./all-contacts.component.scss']
 })
 export class AllContactsComponent implements OnInit {
-
-  constructor() { }
+  testNames: object[]
+  constructor(private backend: BackendService) { }
 
   ngOnInit() {
+    this.testNames = this.backend.testNames;
   }
 
 }

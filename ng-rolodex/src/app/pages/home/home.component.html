@@ -2,7 +2,13 @@
   <label>Search: <input type='text' (keyup)='onKeyUp($event)'></label>
   <br>
   <div id='liveSearch'> {{value}} </div>
-  <div *ngFor='let test of testNames'>
-      {{ test.name }}
+  <div *ngFor='let test of testNames' class='test'>
+      <div class='testName'>{{ test.name }}
+      </div>
+      <div class='testButtons'>
+        <button class='moreInfoButton'>More Info</button>
+        <button class='editButton'>Edit</button>
+        <button class='deleteButton'>Delete</button>
+      </div>
     </div>
 </form>

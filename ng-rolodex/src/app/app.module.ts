@@ -11,6 +11,9 @@ import { MyProfileComponent } from './pages/my-profile/my-profile.component';
 import { HeaderComponent } from './pages/header/header.component';
 import { LoginComponent } from './pages/login/login.component';
 import { HttpClient } from 'selenium-webdriver/http';
+import { CardComponent } from './pages/card/card.component';
+import { AddFormComponent } from './pages/add-form/add-form.component';
+import { EditFormComponent } from './pages/edit-form/edit-form.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { HttpClient } from 'selenium-webdriver/http';
     AllContactsComponent,
     MyProfileComponent,
     HeaderComponent,
-    LoginComponent
+    LoginComponent,
+    CardComponent,
+    AddFormComponent,
+    EditFormComponent
   ],
   imports: [
     BrowserModule,
