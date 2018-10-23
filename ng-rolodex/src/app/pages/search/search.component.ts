@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { BackendService } from '../../services/backend.service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-search',
+  templateUrl: './search.component.html',
+  styleUrls: ['./search.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class SearchComponent implements OnInit {
   value = ''
   testNames: object[]
   constructor(private backend: BackendService) {

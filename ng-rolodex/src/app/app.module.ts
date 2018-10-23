@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './pages/home/home.component';
+import { SearchComponent } from './pages/search/search.component';
 import { AllContactsComponent } from './pages/all-contacts/all-contacts.component';
 import { MyProfileComponent } from './pages/my-profile/my-profile.component';
 import { HeaderComponent } from './pages/header/header.component';
@@ -18,7 +18,7 @@ import { EditFormComponent } from './pages/edit-form/edit-form.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
+    SearchComponent,
     AllContactsComponent,
     MyProfileComponent,
     HeaderComponent,
