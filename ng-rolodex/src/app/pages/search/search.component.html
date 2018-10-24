@@ -1,7 +1,8 @@
 <form>
-  <label>Search: <input type='text' (keyup)='onKeyUp($event)'></label>
+  <label id='searchBar'>Search: <input id='searchInput' type='text' (keyup)='onKeyUp($event)'></label>
   <br>
-  <div id='liveSearch'> {{value}} </div>
+  <!-- <div id='liveSearch'> {{value}} </div> -->
+  <div class='contacts'>
   <div *ngFor='let test of testNames' class='test'>
       <div class='testName'>{{ test.name }}
       </div>
@@ -11,4 +12,5 @@
         <button class='deleteButton'>Delete</button>
       </div>
     </div>
+  </div>
 </form>

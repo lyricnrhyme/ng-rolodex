@@ -1,4 +1,6 @@
+<button routerLink='/addForm'>Create New Contact</button>
 <div id='liveSearch'> {{value}} </div>
+<div class='contacts'>
   <div *ngFor='let test of testNames' class='test'>
       <div class='testName'>{{ test.name }}
       </div>
@@ -8,3 +10,4 @@
         <button class='deleteButton'>Delete</button>
       </div>
     </div>
+  </div>

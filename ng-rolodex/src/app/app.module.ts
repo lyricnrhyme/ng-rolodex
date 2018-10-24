@@ -14,6 +14,7 @@ import { HttpClient } from 'selenium-webdriver/http';
 import { CardComponent } from './pages/card/card.component';
 import { AddFormComponent } from './pages/add-form/add-form.component';
 import { EditFormComponent } from './pages/edit-form/edit-form.component';
+import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { EditFormComponent } from './pages/edit-form/edit-form.component';
     LoginComponent,
     CardComponent,
     AddFormComponent,
-    EditFormComponent
+    EditFormComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,

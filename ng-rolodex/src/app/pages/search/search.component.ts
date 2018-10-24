@@ -18,7 +18,6 @@ export class SearchComponent implements OnInit {
     console.log('new type', this.value.toLowerCase());
     let cardName = document.getElementsByClassName('testName');
     let card = document.getElementsByClassName('test');
-
     for (let i=0; i<cardName.length; i++) {
       if (cardName[i].innerHTML.toString().toLowerCase().startsWith(this.value.toLowerCase())) {
         card[i].style.display = 'block';
