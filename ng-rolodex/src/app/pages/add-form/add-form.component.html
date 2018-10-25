@@ -1,42 +1,42 @@
-<a routerLink='/contacts'>Back to Contacts</a>
+<button routerLink='/contacts'>Back to Contacts</button>
 <br>
 <br>
 <form>
   <label>Name:
-    <input type='text'>
+    <input type='text' name='name' [(ngModel)]='formData.name' required>
   </label>
-  <br>
+  <br><br>
   <label>Address:
-    <input type='text'>
+    <input type='text' name='address' [(ngModel)]='formData.address'>
   </label>
-  <br>
+  <br><br>
   <label>Mobile:
-    <input type='tel'>
+    <input type='tel' name='mobile' [(ngModel)]='formData.mobile'>
   </label>
-  <br>
+  <br><br>
   <label>Work:
-    <input type='tel'>
+    <input type='tel' name='work' [(ngModel)]='formData.work'>
   </label>
-  <br>
+  <br><br>
   <label>Home:
-    <input type='tel'>
+    <input type='tel' name='home' [(ngModel)]='formData.home'>
   </label>
-  <br>
+  <br><br>
   <label>Email:
-    <input type='email'>
+    <input type='email' name='email' [(ngModel)]='formData.email'>
   </label>
-  <br>
+  <br><br>
   <label>Twitter:
-    <input type='text'>
+    <input type='text' name='twitter' [(ngModel)]='formData.twitter'>
   </label>
-  <br>
+  <br><br>
   <label>Instagram:
-    <input type='text'>
+    <input type='text' name='instagram' [(ngModel)]='formData.instagram'>
   </label>
-  <br>
+  <br><br>
   <label>Github:
-    <input type='url'>
+    <input type='url' name='github' [(ngModel)]='formData.github'>
   </label>
-  <br>
-  <button type='submit'>Create</button>
+  <br><br>
+  <button type='submit' (click)='addContact()'>Create</button>
 </form>
