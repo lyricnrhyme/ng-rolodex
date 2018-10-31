@@ -1,6 +1,13 @@
-<form action=''>
-  <label>
-    Login: <input type='text' name='username'>
-    <button type='submit' (click)='toggleLogin()'>Submit</button>
-  </label>
-</form>
+<div class='login'>
+  <form action=''>
+    <label>
+      Login: 
+      <br><br>
+      User: <input type='text' name='username' [(ngModel)]='loginFormData.username'>
+      <br>
+      Password: <input type='text' name='password' [(ngModel)]='loginFormData.password'>
+      <br><br>
+      <button type='submit' (click)='login()'>Login</button>
+    </label>
+  </form>
+</div>

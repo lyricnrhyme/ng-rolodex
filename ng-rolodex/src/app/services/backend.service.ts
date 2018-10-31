@@ -10,14 +10,17 @@ export class BackendService {
     constructor(private http: HttpClient) {
 
     }
+    
+    register(data) {
+        return Promise.resolve({});
+    }
 
-    // getCharacter(id: number) {
-    //     const url = this.baseUrl + 'people/' + id;
-    //     return this.http.get(url).toPromise();
-    // }
+    login(data) {
+        return Promise.resolve({username: data.username})
+    }
 
-    // addCharacter(character) {
-    //     this.characters.push(character);
-    // }
+    logout() {
+        return Promise.resolve({});
+    }
 
 }

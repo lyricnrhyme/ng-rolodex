@@ -1,0 +1,6 @@
+version: '3'
+services:
+  ng-rolodex:
+    image: lyricnrhyme/ng-rolodex:${IMAGE_VERSION}
+    environment:
+      NODE_ENV: production

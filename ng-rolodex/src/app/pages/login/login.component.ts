@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -6,11 +7,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-  isLoggedIn: boolean = true;
-  toggleLogin() {
-    console.log(this.isLoggedIn)
+  loginFormData = {
+    username: '',
+    password: ''
   }
-  constructor() { }
+
+  constructor(private auth: AuthService) { }
+
+  login() {
+    this.auth.login(this.loginFormData)
+    .then(() => {
+        console.log('User logged in');
+    })
+    .catch(err => {
+        console.log('err', err);
+    })
+}
 
   ngOnInit() {
   }
