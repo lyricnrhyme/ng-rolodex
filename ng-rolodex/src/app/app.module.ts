@@ -20,6 +20,7 @@ import { BackendService } from './services/backend.service';
 import { SessionService } from './services/session.service';
 import { AuthService } from './services/auth.service';
 import { CardsComponent } from './pages/cards/cards.component';
+import { MoreInfoComponent } from './pages/more-info/more-info.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { CardsComponent } from './pages/cards/cards.component';
     EditFormComponent,
     LandingPageComponent,
     RegisterComponent,
-    CardsComponent
+    CardsComponent,
+    MoreInfoComponent
   ],
   imports: [
     BrowserModule,

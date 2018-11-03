@@ -8,10 +8,27 @@ import { BackendService } from 'src/app/services/backend.service';
 })
 export class AllContactsComponent implements OnInit {
   testNames: object[]
+  user: any
+  contact: any
+  allUsers: any
+  allContacts: any
+
   constructor(private backend: BackendService) { }
 
   ngOnInit() {
     this.testNames = this.backend.testNames;
+    this.user = this.backend.user;
+    this.contact = this.backend.contact;
+    this.allUsers = this.backend.allUsers;
+    this.allContacts = this.backend.allContacts;
+
+    this.backend.getContacts()
+    .then(data => {
+      this.allContacts = data
+    })
+    .catch(err => {
+      console.log('all contacts err', err);
+    })
   }
 
 }
