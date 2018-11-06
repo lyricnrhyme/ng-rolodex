@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BackendService } from 'src/app/services/backend.service';
+import { RouterModule, Routes } from '@angular/router';
 
 @Component({
   selector: 'app-all-contacts',
