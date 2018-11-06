@@ -57,7 +57,7 @@ app.get('/profile', (req, res) => {
     })
 })
 
-app.post('/addForm', (req, res) => {
+app.post('/new', (req, res) => {
     console.log('pls', req.body)
     const payload = {
         name: req.body.name,

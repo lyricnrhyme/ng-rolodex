@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BackendService } from '../../services/backend.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-add-form',
@@ -7,7 +8,7 @@ import { BackendService } from '../../services/backend.service';
   styleUrls: ['./add-form.component.scss']
 })
 export class AddFormComponent implements OnInit {
-  testNames: object[]
+  baseUrl: string
 
   formData: {
     name: string,
@@ -31,25 +32,30 @@ export class AddFormComponent implements OnInit {
     github: ''
   }
 
-  constructor(private backend: BackendService) { }
+  constructor(private backend: BackendService, private http: HttpClient) { }
 
   addContact() {
-    this.testNames.push({
+    let url = this.baseUrl + '/new';
+    let obj = {
       name: this.formData.name,
       address: this.formData.address,
       mobile: this.formData.mobile,
       work: this.formData.work,
       home: this.formData.home,
       email: this.formData.email,
-      twiter: this.formData.twiter,
+      twitter: this.formData.twiter,
       instagram: this.formData.instagram,
       github: this.formData.github
-    })
-    console.log('testing', this.testNames);
+    }
+    this.http.post(url, obj)
+      .subscribe(res => {
+        console.log('posted')
+      })
   }
 
+
   ngOnInit() {
-    this.testNames = this.backend.testNames
+    this.baseUrl = this.backend.baseUrl
   }
 
 }

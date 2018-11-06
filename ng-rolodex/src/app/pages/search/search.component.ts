@@ -8,7 +8,6 @@ import { BackendService } from '../../services/backend.service';
 })
 export class SearchComponent implements OnInit {
   value = ''
-  testNames: object[]
   user: any
   contact: any
   allUsers: any
@@ -35,7 +34,6 @@ export class SearchComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.testNames = this.backend.testNames;
     this.user = this.backend.user;
     this.contact = this.backend.contact;
     this.allUsers = this.backend.allUsers;

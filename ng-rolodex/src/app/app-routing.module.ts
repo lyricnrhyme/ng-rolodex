@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: 'contacts', component: AllContactsComponent },
   { path: 'profile', component: MyProfileComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'addForm', component: AddFormComponent },
+  { path: 'new', component: AddFormComponent },
   { path: 'search', component: SearchComponent },
   { path: 'register', component: RegisterComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }

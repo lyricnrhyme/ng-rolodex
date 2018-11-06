@@ -7,7 +7,6 @@ import { BackendService } from 'src/app/services/backend.service';
   styleUrls: ['./all-contacts.component.scss']
 })
 export class AllContactsComponent implements OnInit {
-  testNames: object[]
   user: any
   contact: any
   allUsers: any
@@ -16,7 +15,6 @@ export class AllContactsComponent implements OnInit {
   constructor(private backend: BackendService) { }
 
   ngOnInit() {
-    this.testNames = this.backend.testNames;
     this.user = this.backend.user;
     this.contact = this.backend.contact;
     this.allUsers = this.backend.allUsers;
