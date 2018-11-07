@@ -11,9 +11,10 @@ import { HttpClientModule } from '@angular/common/http';
 export class BackendService {
     baseUrl: string = 'http://localhost:8989' 
     user: any[] = [];
-    contact: any[] = [];
+    contact: any;
     allUsers: any[] = [];
     allContacts: any[] = [];
+    id: any;
 
     constructor(private http: HttpClient) {
     }
@@ -28,9 +29,13 @@ export class BackendService {
         return this.http.get(url).toPromise();
     }
     
-    moreInfo(id: number) {
-        const url = this.baseUrl + '/contacts/' + id;
+    moreInfo() {
+        const url = this.baseUrl + '/contacts/' + this.id;
         return this.http.get(url).toPromise();
+    }
+
+    storeId(id) {
+        this.id = id;
     }
 
     register(data) {

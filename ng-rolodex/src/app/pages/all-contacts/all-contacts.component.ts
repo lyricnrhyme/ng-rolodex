@@ -7,14 +7,22 @@ import { RouterModule, Routes } from '@angular/router';
   templateUrl: './all-contacts.component.html',
   styleUrls: ['./all-contacts.component.scss']
 })
+
 export class AllContactsComponent implements OnInit {
   user: any
   contact: any
   allUsers: any
   allContacts: any
+  id: any
 
   constructor(private backend: BackendService) { }
 
+  getId(id) {
+    console.log('current id', id);
+    this.id = id;
+    this.backend.storeId(this.id);
+  }
+  
   ngOnInit() {
     this.user = this.backend.user;
     this.contact = this.backend.contact;
@@ -24,6 +32,7 @@ export class AllContactsComponent implements OnInit {
     this.backend.getContacts()
     .then(data => {
       this.allContacts = data
+      console.log('this.allContacts', this.allContacts);
     })
     .catch(err => {
       console.log('all contacts err', err);

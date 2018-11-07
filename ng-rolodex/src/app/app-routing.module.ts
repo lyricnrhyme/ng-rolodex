@@ -8,9 +8,11 @@ import { LoginComponent } from './pages/login/login.component';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { AddFormComponent } from './pages/add-form/add-form.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { MoreInfoComponent } from './pages/more-info/more-info.component';
 
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
+  { path: 'contacts/details', component: MoreInfoComponent},
   { path: 'contacts', component: AllContactsComponent },
   { path: 'profile', component: MyProfileComponent },
   { path: 'login', component: LoginComponent },

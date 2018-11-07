@@ -1,5 +1,17 @@
 <button routerLink='/contacts'>Back to Contacts</button>
 <button>Edit</button>
 <button>Delete</button>
-
-<h2>{{ x.name }}</h2>
+<br><br>
+<h2>
+    {{contact.name}}
+</h2>
+<ul>
+    <li>Address: {{contact.address}}</li>
+    <li>Mobile: {{contact.mobile}}</li>
+    <li>Work: {{contact.work}}</li>
+    <li>Home: {{contact.home}}</li>
+    <li>Email: {{contact.email}}</li>
+    <li>Twitter: {{contact.twitter}}</li>
+    <li>Instagram: {{contact.instagram}}</li>
+    <li>Github: {{contact.github}}</li>
+</ul>

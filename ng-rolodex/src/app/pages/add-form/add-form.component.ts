@@ -17,7 +17,7 @@ export class AddFormComponent implements OnInit {
     work: string,
     home: string,
     email: string,
-    twiter: string,
+    twitter: string,
     instagram: string,
     github: string
   } = {
@@ -27,7 +27,7 @@ export class AddFormComponent implements OnInit {
     work: '',
     home: '',
     email: '',
-    twiter: '',
+    twitter: '',
     instagram: '',
     github: ''
   }
@@ -43,7 +43,7 @@ export class AddFormComponent implements OnInit {
       work: this.formData.work,
       home: this.formData.home,
       email: this.formData.email,
-      twitter: this.formData.twiter,
+      twitter: this.formData.twitter,
       instagram: this.formData.instagram,
       github: this.formData.github
     }

@@ -75,7 +75,7 @@ app.post('/new', (req, res) => {
     .forge(payload)
     .save()
     .then( result => {
-        Contact
+        Contacts
         .fetchAll()
         .then( result => {
             console.log('pls', result);
@@ -84,6 +84,21 @@ app.post('/new', (req, res) => {
     })
     .catch( err => {
         console.log('err', err);
+        res.json(err);
+    })
+})
+
+app.get('/contacts/:contact_id', (req, res) => {
+    const { contact_id } = req.params;
+    Contacts
+    .where({ contact_id })
+    .fetchAll()
+    .then( result => {
+        console.log('more detail');
+        res.json(result.serialize())
+    })
+    .catch( err => {
+        console.log('detail err', err);
         res.json(err);
     })
 })

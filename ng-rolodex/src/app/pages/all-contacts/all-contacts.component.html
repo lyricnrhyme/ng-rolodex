@@ -5,7 +5,7 @@
       <div class='testName'>{{ test.name }}
       </div>
       <div class='testButtons'>
-        <button class='moreInfoButton'>More Info</button>
+        <button class='moreInfoButton' (click)='getId(test.contact_id)' routerLink='/contacts/details'>More Info</button>
         <button class='editButton'>Edit</button>
         <button class='deleteButton'>Delete</button>
       </div>
